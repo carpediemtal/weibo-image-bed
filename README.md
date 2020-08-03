@@ -6,6 +6,8 @@ categories: Java
 
 ---
 
+## 前因后果
+
 微博图床加了防盗链，有一个缓兵之计是给所有`<img>`标签加上一个属性：`referrerpolicy="no-referrer"`。
 
 博客里插入了非常多图片，手动添加是不可能的，我们来用java批处理：
@@ -56,6 +58,8 @@ public class MarkDownModify {
 
 ```
 
+## 图形界面
+
 我用javaFX给这段批处理程序写了一个图形界面：
 
 <img src="http://ww1.sinaimg.cn/large/007FpgxTly1ghdlyoyzkwj30dy06bweg.jpg"/>
@@ -63,3 +67,13 @@ public class MarkDownModify {
 <img src="http://ww1.sinaimg.cn/large/007FpgxTly1ghdlzcsac3j30en09w0t2.jpg"/>
 
 先选择md文件所在的目录，之后点击Execute按钮执行批处理，点击help查看帮助。
+
+源码已经上传到了github：
+
+https://github.com/carpediemtal/weibo-image-bed/tree/master
+
+## 参考资料
+
+如何在IDEA里运行javafx：
+
+https://openjfx.io/openjfx-docs/
